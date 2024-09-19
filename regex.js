@@ -65,9 +65,90 @@ let res8 = /(red|pink|blue)/g;
 let all9 = str9.match(res8);
 console.log(all9);
 
+// JavaScript Regex (/./) Metacharacters...
+let str10 = 'String, Hello, World, Infosys, system';
+let res9 = /s.s/g;
+let all10 = str10.match(res9);
+console.log(all10);
+
+// JavaScript Regex (/\w/g) Metacharacters...
+let str11 = 'Hello 100%';
+let res10 = /\w/g;
+let all11 = str11.match(res10);
+console.log(all11);
+
+// JavaScript Regex (/\W/g) Metacharacters...
+let str12 = 'Hello100%!';
+let res11 = /\W/g;
+let all12 = str12.match(res11);
+console.log(all12);
+
+// JavaScript Regex (/\d/g) Metacharacters...
+let str13 = 'Hello100%!';
+let res12 = /\d/g;
+let all13 = str13.match(res12);
+console.log(all13);
+
+// JavaScript Regex (/\D/g) Metacharacters...
+let str14 = 'Hello100%!';
+let res13 = /\D/g;
+let all14 = str14.match(res13);
+console.log(all14);
+
+// JavaScript Regex (/\s/g) Metacharacters...
+let str15 = 'Hello 100% !';
+let res14 = /\s/g;
+let all15 = str15.match(res14);
+console.log(all15);
+
+
+// JavaScript Regex (/\S/g) Metacharacters...
+let str16 = 'Hello 100% !';
+let res15 = /\S/g;
+let all16 = str16.match(res15);
+console.log(all16);
 
 
 
+// JavaScript Regex (/\b/) Metacharacters...
+let str17 = 'HELLO WORLD HELP ME';
+let res16 = /\bME/;
+let all17 = str17.search(res16);
+console.log(all17);
+
+// JavaScript Regex (/\B/) Metacharacters...
+let str18 = "HELLO, LOOK AT YOU!";
+let res17 = /\BLO/;
+let all18 = str18.search(res17);
+console.log(all18);
+
+// JavaScript Regex {X} Quantifiers...
+let str19 = "1000,100,1000,1000,10000";
+let res18 = /\d{4}/g;
+let all19 = str19.match(res18);
+console.log(all19);
 
 
+// JavaScript Regex {X,Y} Quantifiers...
+let str20 = "1,100,1000,1000,100";
+let res19 = /\d{3,4}/g;
+let all20 = str20.match(res19);
+console.log(all20);
 
+// JavaScript Regex {X,Y} Quantifiers...
+let str21 = "1,100,1000,1000,100";
+let res20 = /\d{4,}/g;
+let all21 = str21.match(res20);
+console.log(all21);
+
+// JavaScript Regex $ Quantifiers...
+let str22 = "Is This";
+let res21 = /is$/;
+let all22 = str22.match(res21);
+console.log(all22);
+
+// JavaScript Regex $ Quantifiers...
+let str23 = "Is This is Timing";
+let res22 = /^I/;
+let all23 = str23.match(res22);
+console.log(all23);
